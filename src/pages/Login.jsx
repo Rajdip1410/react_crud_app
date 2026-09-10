@@ -74,7 +74,7 @@ export const Login = () => {
     } else if (!emailRegex.test(data.email)) {
       error.email = "Please enter a valid email address";
     }
-
+    // Regex for password
     const passwordRegex =
       /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*(),.?":{}|<>]).{8,}$/;
     if (!data.password) {
