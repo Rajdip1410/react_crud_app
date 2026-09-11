@@ -12,6 +12,7 @@ import {
 } from "recharts";
 
 export const AdminPage = () => {
+  // dashboard api 
   const dashboard = import.meta.env.VITE_DASHBOARD_API_ENDPOINT;
 
   const userRole = localStorage.getItem("userRole");
