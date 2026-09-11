@@ -12,7 +12,7 @@ import {
 } from "recharts";
 
 export const AdminPage = () => {
-  const teachers = import.meta.env.VITE_TEACHERDASHBOARD_API_ENDPOINT;
+  const dashboard = import.meta.env.VITE_DASHBOARD_API_ENDPOINT;
 
   const userRole = localStorage.getItem("userRole");
 
@@ -28,7 +28,7 @@ export const AdminPage = () => {
 
   const fetchDashboardData = async () => {
     try {
-      const response = await axios.get(`${teachers}`, {
+      const response = await axios.get(`${dashboard}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
